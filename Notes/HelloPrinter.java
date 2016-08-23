@@ -54,5 +54,26 @@ public class HelloPrinter
          */
         int SPEED_OF_LIGHT = 300000000;
         String firstName;
+        
+        /* This is a compile-time error. (The code doesn't even compile.)
+         * This includes syntax errors and some sematic error.
+         */
+        //System.ou.println( "Hello, World!" );
+        
+        /* This is a run-time error. (The program generates the error
+         *  when it is executed.)
+         *  More specificially, this a logical error. (The program doesn't
+         *  crash, but it doesn't work as expected.)
+         */
+        System.out.println( "Hello, Word!" );
+        
+        /* This is also a run-time error. More specifically, it is an
+         * exception. (The program crashes, in general.)
+         */
+        //System.out.println( 1/0 );
     }
 }
+
+
+
+
